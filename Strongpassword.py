@@ -16,11 +16,11 @@ def pass_strength(str):
     count_Num = 0
     if len(str) < 8:
         return False
-    for Cap in passRegexCap.finditer(password):
+    for Cap in passRegexCap.finditer(str):
         count_Cap += 1
         if count_Cap == 0:
             return False
-    for Num in passRegexCap.finditer(password):
+    for Num in passRegexCap.finditer(str):
         count_Num += 1
         if count_Num == 0:
             return False
