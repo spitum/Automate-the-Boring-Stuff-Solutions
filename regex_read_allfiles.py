@@ -4,8 +4,6 @@ import glob
 import os
 import re
 
-#os.chdir('C:/Users/spitu/Documents/')
-#print(os.getcwd())
 path = os.getcwd()
 fileList = glob.glob("*.txt")
 
