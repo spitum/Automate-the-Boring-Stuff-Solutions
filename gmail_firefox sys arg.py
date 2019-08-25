@@ -47,6 +47,9 @@ def gmail_sender():
             #send email
             send_button = browser.find_element_by_css_selector("div[aria-label='Send ‪(Ctrl-Enter)‬']")
             send_button.click()
+            
+            browser.quit()
+            
         except Exception:
             pass
 
