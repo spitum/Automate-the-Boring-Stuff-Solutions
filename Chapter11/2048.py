@@ -1,9 +1,4 @@
 from selenium import webdriver
-# browser = webdriver.Firefox()
-# browser.get('http://inventwithpython.com/#automate')
-# linkElem = browser.find_element_by_link_text('Read Online for Free')
-# linkElem.click() # follows the "Read It Online" link
-
 from selenium.webdriver.common.keys import Keys
 import getpass
 
