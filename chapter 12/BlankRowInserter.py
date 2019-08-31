@@ -1,4 +1,3 @@
-
 #! blankRowInserter.py
 # You can write this program by reading in the contents of the spreadsheet.
 # Then, when writing out the new spreadsheet, use a for loop to copy the first N lines. 
@@ -8,11 +7,12 @@ import openpyxl
 import sys
 import os
 
-N  = int(sys.argv[1])
-M = int(sys.argv[2])
-Filename = input('Please enter the new file name (xlsx).')
 
-print('Opening workbook...')
+
+N  = int(sys.argv[1]) # Insert blank row after this row
+M = int(sys.argv[2]) #Number of rows to insert
+
+Filename = input('Please enter the new file name (xlsx).')
 
 wb = openpyxl.Workbook()
 dest_filename = Filename + '.xlsx'
@@ -20,7 +20,8 @@ dest_filename = Filename + '.xlsx'
 ws1 = wb.active
 ws1.title = "Updated"
 
-sourcefilename = os.path.basename(sys.argv[3])
+print('Opening workbook...')
+sourcefilename = os.path.basename(sys.argv[3]) # cwd folder/filename
 
 example = openpyxl.load_workbook(sourcefilename)
 
