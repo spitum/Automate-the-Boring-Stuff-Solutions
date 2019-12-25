@@ -33,4 +33,4 @@ if __name__ == '__main__':
     else:
         print("Please use a stronger password. The password should contain at least 1 number and 1 uppercase letter.")
 
-#TODO add lowercase and special characters
+#TODO add lowercase and special characters and make it longer
